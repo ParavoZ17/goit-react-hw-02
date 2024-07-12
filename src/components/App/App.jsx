@@ -3,6 +3,7 @@ import "./App.css";
 import Description from "../Description/Description.jsx";
 import Feedback from "../Feedback/Feedback.jsx";
 import Options from "../Options/Options.jsx";
+import Notification from "../Notification/Notification.jsx";
 
 export default function App() {
   const [clicks, setClicks] = useState(() => {
@@ -63,8 +64,8 @@ export default function App() {
           percent={positiveFeedback}
         />
       ) : (
-        <p>No feedback yet</p>
-      )}
+        <Notification/>
+        )}
     </>
   );
 }
